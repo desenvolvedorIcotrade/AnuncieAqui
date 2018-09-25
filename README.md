@@ -46,5 +46,4 @@ Tests are written with `mocha`, `nyc`, `assume`, and
 npm test
 ```
 
-##### Author: [Charlie Robbins](https://github.com/indexzero)
-##### LICENSE: MIT
+ MIT
