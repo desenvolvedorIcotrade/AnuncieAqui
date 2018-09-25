@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+    <title>React App</title>
+</head>
+
+<body>
+    <input type="text" id="txt">
+    <button onclick="addli()">Add</button>
+    <button>Edit</button>
+    <button>Delete</button>
+
+
+
+    <ul id="list">
+        <li>html</li>
+        <li>css </li>
+        <li>javascript </li>
+        <li>php </li>
+
+    </ul>
+
+    <script>
+        var inputText = document.getElementById("txt"),
+            items = document.querySelectorAll("#list li"),
+            tab = [],
+            index;
+
+        for (var i = O; i < items.length; i++) {
+            tab.push(items[i].innerHTML);
+
+        }
+
+        for (var i = O; i < items.length; i++) {
+
+            items[i].onclick = function() {
+                index = tab.indexOf(this.innerHTML);
+                console.log(this.ineerHTML + "index =" + index)
+                inputText.Valeu = this.innerHTML;
+            };
+
+
+            function addli() {
+
+                var listNode = document.getElementById("list"),
+                    textNode = document.createTextNode(inputText.Valeu),
+                    liNode = document.createElement("li");
+
+                liNode.appenChild(textNode);
+                listNode.appendChild(liNode);
+
+
+
+            }
+    </script>
+
+
+
+
+
+
+    <noscript>
+      this app
+    </noscript>
+    <div id="root"></div>
+
+</body>
+
+</html>
