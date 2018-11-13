@@ -13,5 +13,5 @@ script:
 
 notifications:
   email:
-    - travis@nodejitsu.com
+    - clevertonk5@gmail.com
   irc: "irc.freenode.org#nodejitsu"
